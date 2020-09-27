@@ -1,11 +1,11 @@
 {
     "bot": {
-        "token": "",
-        "owner": [""],
-        "name": "Sohbet ve Oyun",
+        "token": "NzU5OTAwNzEzNzczMDM5NjE3.X3EOsA.X1MU7Xw-zEm3WR9_U_wUiQVSmAc",
+        "owner": ["602801792950075394"],
+        "name": "Akila",
         "year": "2018",
-        "prefix": "svo!",
-        "version": "v1.0.1"
+        "prefix": "a!",
+        "version": "v1.0.0"
     },
     "customEmojis": {
         "basarili": "<:basarili:361601989056004096>",
