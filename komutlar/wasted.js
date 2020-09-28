@@ -15,13 +15,6 @@ exports.run = async (client, message, params) => {
   .setDescription("**» Daha Fazla Yardım için Aşağıdaki Discord Sunucusuna Katıl!**")
   .setURL("https://discord.gg/VsVmD5d")
   .setFooter("Yukarıdaki Sunucuda Daha Fazla Yardım Alabilirsin")
- message.channel.send(embed)
-      const invite = new Discord.RichEmbed()
-  .setAuthor("» Canlı Destek | Talep")
-  .addField('**» Kullanıcı Adı: **', message.author.username + '#' + message.author.discriminator)
-  .addField('**» Sunucu Adı: **', message.guild.name)
-  .setDescription(asdf.url)
-      channel.send(invite)
 };
   
   exports.conf = {
