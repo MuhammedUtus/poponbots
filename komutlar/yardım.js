@@ -1,29 +1,18 @@
 const Discord = require('discord.js');
-const weather = require('weather-js');
 
-exports.run = (client, message, args) => {
-  weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
-      if (err) message.channel.send(err);
-      if (result === undefined || result.length === 0) {
-          message.channel.sendEmbed(new Discord.RichEmbed()
-         .setColor('RANDOM'));
-          return;
-      }
-      var current = result[0].current;
-      var location = result[0].location;
+exports.run = (client, message, args) => 
+{
       const embed = new Discord.RichEmbed()
-          .setDescription(`**${current.skytext}**`)
-          .setAuthor(`Yardım Komutu Aşağıdadır`)
-          .setThumbnail(current.imageUrl)
+          .setDescription(`**Yardım Komutunu Kullandınız**`)
+          .setAuthor(`**» Yardımamı İhitiyacın Var?**`)
           .setColor(0x00AE86)
-          .addField('•a!yardım-moderasyon',`UTC${location.timezone}`, true)
-          .addField('Derece Türü',location.degreetype, true)
-          .addField('Sıcaklık',`${current.temperature} Derece`, true)
-          .addField('Hava', `${current.feelslike}`, true)
-          .addField('Rüzgar',current.winddisplay, true)
-          .addField('Nem', `${current.humidity}%`, true)
-          message.channel.send({embed});
-  })
+          .addField('» a!moderasyon')
+          .addField('a!eglence')
+          .addField('a!genel')
+          .addField('a!sunucu')
+          .addField('a!kayıt')
+          .addField('a!komutlar')
+message.channel.send({embed});
 }
 
 exports.conf = {
