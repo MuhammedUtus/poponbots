@@ -172,7 +172,7 @@ exports.run = async (client, message, args) => {
       	color: 'GREEN',
       	mentionable: true
       }).then(d => {
-      db.set(`destekR_${message.guild.id}`, d.id)
+      embed.set(`destekR_${message.guild.id}`, d.id)
     })
       message.guild.createRole({
         name: 'V.I.P',
@@ -185,7 +185,7 @@ exports.run = async (client, message, args) => {
       message.guild.createRole({
         name: 'Üye',
         color: 'caf7fc',
-      }).then(d => { db.set(`otoR_${message.guild.id}`, d.id)})
+      }).then(d => { embed.set(`otoR_${message.guild.id}`, d.id)})
 
     const embed = new Discord.RichEmbed()
 	.setColor('RANDOM')
