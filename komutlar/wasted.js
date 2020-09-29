@@ -1,31 +1,37 @@
+var Jimp = require('jimp');
 const Discord = require('discord.js');
 
-exports.run = async (client, message, params) => {
-    if(message.channel.type == "dm")  return;
-  if(message.channel.type !== "text") return;
-  var channel = client.channels.find('id', '540269834835853340')
-    const asdf = await client.channels.get(message.channel.id).createInvite()
-  message.delete();
-  const embed = new Discord.RichEmbed()
-  .setTitle("»  Yardım Komutunu Kullandınız")
-  .setDescription("**» a!yardım genel**")
-  .setDescription("**» a!yardım eğlence**")
-  .setDescription("**» a!yardım kayıt**")
-  .setDescription("**» a!yardım sunucu**")
-  .setDescription("**» Daha Fazla Yardım için Aşağıdaki Discord Sunucusuna Katıl!**")
-  .setURL("https://discord.gg/VsVmD5d")
-  .setFooter("Yukarıdaki Sunucuda Daha Fazla Yardım Alabilirsin")
-};
-  
-  exports.conf = {
+module.exports.run = async (bot, message, args) => {
+
+  var user = message.mentions.users.first() || message.author;
+      message.channel.startTyping();
+        var user = message.mentions.users.first() || message.author;
+        if (!message.guild) user = message.author;
+
+        Jimp.read(user.avatarURL, (err, image) => {
+            image.resize(295, 295)
+            image.greyscale()
+            image.gaussian(3)
+            Jimp.read("https://cdn.glitch.com/b18a2fa6-68cb-49d5-9818-64c50dd0fdab%2F1.png?1529363616039", (err, avatar) => {
+                avatar.resize(295, 295)
+                image.composite(avatar, 4, 0).write(`./img/wasted/${bot.user.id}-${user.id}.png`);
+                setTimeout(function() {
+                    message.channel.send(new Discord.Attachment(`./img/wasted/${bot.user.id}-${user.id}.png`));
+                }, 1000);
+          message.channel.stopTyping();
+            });
+        });
+    };
+
+exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['help','yardım'],
+  aliases: [],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'yardım',
-  description: 'yardım',
-  usage: 'yardım'
+  name: 'wasted',
+  description: 'wasted.',
+  usage: 'wasted'
 };
