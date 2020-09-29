@@ -214,5 +214,5 @@ exports.conf = {
 exports.help = {
 	name: 'sunucu-kurulum',
 	description: 'Sunucunuzu sıfırlar ve tekrardan botun ayarlarını ayarlayarak gerekli rolleri, kanalları, kategorileri oluşturarak sunucu kurar.',
-	usage: ''
+	usage: 'sunucu-kurulum'
 };
