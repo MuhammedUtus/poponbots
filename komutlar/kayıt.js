@@ -8,10 +8,10 @@ exports.run = (client, message, args) =>
           .setColor(0x00AE86)
           .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
           .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
-          .addField('» a!bot-info')
-          .addField('» a!yazı-kanal-aç [kanalın ismi]')
-          .addField('» a!ses-kanal-aç [açmak istediğiniz kanalın adı]')
-          .addField('» Bukadar Komut Vardı İyi Kullanmalar Dileriz. [Akila Bot Ekibi]')
+          .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
+          .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
+          .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
+          .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
 message.channel.send({embed});
 }
 

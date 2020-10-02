@@ -8,9 +8,7 @@ exports.run = (client, message, args) =>
           .setColor(0x00AE86)
           .addField('» a!moderasyon')
           .addField('» a!eglence')
-          .addField('» a!genel')
-          .addField('» a!sunucu')
-          .addField('» a!kayıt')
+          .addField('» a!kayıt-yardım')
           .addField('» a!komutlar')
 message.channel.send({embed});
 }
