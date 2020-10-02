@@ -6,12 +6,12 @@ exports.run = (client, message, args) =>
           .setDescription(`**Yardım Komutunu Kullandınız**`)
           .setAuthor(`**» Yardımamı İhitiyacın Var?**`)
           .setColor(0x00AE86)
-          .addField('» a!sahibim')
-          .addField('» a!say [botun söyleyeceği yazı]')
-          .addField('» a!bot-info')
-          .addField('» a!yazı-kanal-aç [kanalın ismi]')
-          .addField('» a!ses-kanal-aç [açmak istediğiniz kanalın adı]')
-          .addField('» Bukadar Komut Vardı İyi Kullanmalar Dileriz. [Akila Bot Ekibi]')
+          .addField('» a!sunucu-kurulum (Bu komutu kullanırsanız onaylamanıza gerek kalmaz direk kanallar ve kategorlier silinir ve bot kendisi sunucuyu yeniden oluşturur ve kurlları kendisi yazar.)')
+          .addField('» a!sunucu (Sunucunuz hakkında bilgi verir)')
+          .addField('» a!sunucutanıt')
+          .addField('» a!yasakla <@kullanıcı> <sebep>')
+          .addField('» Daha Eklenecek Çoook Komut Var Ama Bunun İçin Bizim Bütçemiz Yok Paycell Kartımızı Katkıda Bulunarak Yardım Edebilirsin Paycell Barkodumuz:[4460606363637]')
+          .addField('» Bukadar Moderasyon Komutu Vardı İyi Kullanmalar Dileriz. [Akila Bot Ekibi]')
 message.channel.send({embed});
 }
 
