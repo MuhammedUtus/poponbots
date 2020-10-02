@@ -6,8 +6,8 @@ exports.run = (client, message, args) =>
           .setDescription(`**Yardım Komutunu Kullandınız**`)
           .setAuthor(`**» Yardımamı İhitiyacın Var?**`)
           .setColor(0x00AE86)
-          .addField('» a!sahibim')
-          .addField('» a!say [botun söyleyeceği yazı]')
+          .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
+          .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
           .addField('» a!bot-info')
           .addField('» a!yazı-kanal-aç [kanalın ismi]')
           .addField('» a!ses-kanal-aç [açmak istediğiniz kanalın adı]')
@@ -18,12 +18,12 @@ message.channel.send({embed});
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['komutlar','commands'],
-  permLevel: "0"
+  aliases: ['kayıt-yardım'],
+  permLevel: "3"
 };
 
 exports.help = {
-  name: "komutlar",
-  description: "komutları gösterir",
-  usage: "komutlar"
+  name: "kayıt-yardım",
+  description: "kayıt-yardım",
+  usage: "kayıt-yardım"
 };

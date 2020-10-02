@@ -1,21 +1,21 @@
-const Discord = require("discord.js");
-const moment = require("moment");
-require("moment-duration-format");
+const Discord = require('discord.js');
 
-{exports.run = (client, msg) => {
-  const duration = moment.duration(client.uptime).format("");
-  msg.channel.sendCode("asciidoc", ` İSTATİSTİKLER 
-• 
-`
-;exports.conf = {
+exports.run = (client, message, args) => {
+  let mesaj = args.slice(0).join(' ');
+if (mesaj.length < 1) return message.reply('Benim Bir Sahibim Yoktur Ben Kendi Kendime Kodlandım');
+  message.delete();
+  message.channel.send(mesaj);
+};
+
+exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['Sahip','Commander'],
+  aliases: ['sahip', 'sahibim'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'sahip',
-  description: 'sahibimi gösterir.',
-  usage: 'sahip'
+  name: 'sahibim',
+  description: 'sahibim',
+  usage: 'sahibim'
 };
