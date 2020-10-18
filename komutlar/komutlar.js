@@ -19,7 +19,7 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ['komutlar','commands'],
-  permLevel: "0"
+  permLevel: "1"
 };
 
 exports.help = {
