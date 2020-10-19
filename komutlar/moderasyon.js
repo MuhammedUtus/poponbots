@@ -11,7 +11,7 @@ exports.run = (client, message, args) =>
           .addField('» a!sunucutanıt')
           .addField('» a!yasakla <@kullanıcı> <sebep>')
           .addField('» Daha Eklenecek Çoook Komut Var Ama Bunun İçin Bizim Bütçemiz Yok Paycell Kartımızı Katkıda Bulunarak Yardım Edebilirsin Paycell Barkodumuz:[4460606363637]')
-          .addField('» Bukadar Moderasyon Komutu Vardı İyi Kullanmalar Dileriz. [Akila Bot Ekibi]')
+          .addField('» Bukadar Moderasyon Komutu Vardı İyi Kullanmalar Dileriz. [Apon Bot Ekibi]')
 message.channel.send({embed});
 }
 

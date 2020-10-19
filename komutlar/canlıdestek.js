@@ -7,7 +7,7 @@ exports.run = async (client, message, params) => {
     const asdf = await client.channels.get(message.channel.id).createInvite()
   message.delete();
   const embed = new Discord.RichEmbed()
-  .setTitle("»  Bot | Canlı Destek")
+  .setTitle("» Apon Bot | Canlı Destek")
   .setDescription("**Canlı Desteği kullandğın için teşekkür ederiz, Seninle ekibim ilgilenicektir lütfen bekle!**")
   .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin <@485741578615521291>")
  message.channel.send(embed)
