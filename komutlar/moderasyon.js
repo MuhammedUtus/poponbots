@@ -10,7 +10,8 @@ exports.run = (client, message, args) =>
           .addField('» a!sunucu (Sunucunuz hakkında bilgi verir)')
           .addField('» a!sunucutanıt')
           .addField('» a!yasakla <@kullanıcı> <sebep>')
-          .addField('» Daha Eklenecek Çoook Komut Var Ama Bunun İçin Bizim Bütçemiz Yok Paycell Kartımızı Katkıda Bulunarak Yardım Edebilirsin Paycell Barkodumuz:[4460606363637]')
+          .addField('» Daha Eklenecek Çoook Komut Var Ama Bunun İçin Bizim Bütçemiz Yok Paycell Kartımızı Katkıda Bulunarak Yardım Edebilirsin Paycell Barkodumuz:[4460606363637]» a!reklam-taraması oynuyoru + durumunda reklam içeren kişileri gösterir!')
+          .addField('» a!reklam-taraması oynuyoru + durumunda reklam içeren kişileri gösterir!')
           .addField('» Bukadar Moderasyon Komutu Vardı İyi Kullanmalar Dileriz. [Apon Bot Ekibi]')
 message.channel.send({embed});
 }
