@@ -21,6 +21,7 @@ exports.run = (client, message, args) =>
           .addField('» a!wasted')
           .addField('» a!youtube')
           .addField('» a!sahip')
+          .addField('» a!davet')
 message.channel.send({embed});
 }
 

@@ -10,6 +10,7 @@ exports.run = (client, message, args) =>
           .addField('» a!eglence')
           .addField('» a!kayıt-yardım')
           .addField('» a!komutlar')
+          .addField('» a!davet') 
 message.channel.send({embed});
 }
 

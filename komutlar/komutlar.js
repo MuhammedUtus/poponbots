@@ -11,6 +11,7 @@ exports.run = (client, message, args) =>
           .addField('» a!bot-info')
           .addField('» a!yazı-kanal-aç [kanalın ismi]')
           .addField('» a!ses-kanal-aç [açmak istediğiniz kanalın adı]')
+          .addField('» a!davet')
           .addField('» Bukadar Komut Vardı İyi Kullanmalar Dileriz. [Apon Bot Ekibi]')
 message.channel.send({embed});
 }
