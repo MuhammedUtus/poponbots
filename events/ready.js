@@ -7,7 +7,9 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
- client.user.setActivity(`${prefix}yardım + ${client.guilds.size} sunucu + ${client.users.size} kullanıcı`)
+ client.user.setActivity(`${prefix}yardım + ${client.guilds.size} sunucu + ${client.users.size} kullanıcı
+      🅰 a!yardım 🅱
+      📃 a!yardım 📃   `)
     ];
 
     setInterval(function() {
