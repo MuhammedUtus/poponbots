@@ -5,7 +5,7 @@ exports.run = (client, message, args) =>
       const embed = new Discord.RichEmbed()
           .setDescription(`**Yardım Komutunu Kullandınız**`)
           .setAuthor(`**» Yardımamı İhitiyacın Var?**`)
-          .setColor(0x00AE86)
+          .setColor("RED")
           .addField('» a!moderasyon')
           .addField('» a!eglence')
           .addField('» a!kayıt-yardım')
@@ -22,6 +22,6 @@ exports.conf = {
 
 exports.help = {
   name: "yardım",
-  description: "hava durumunu gösterir",
+  description: "yardım gösterir",
   usage: "yardım"
 };

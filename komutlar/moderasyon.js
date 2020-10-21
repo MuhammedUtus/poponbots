@@ -5,7 +5,7 @@ exports.run = (client, message, args) =>
       const embed = new Discord.RichEmbed()
           .setDescription(`**Yardım Komutunu Kullandınız**`)
           .setAuthor(`**» Yardımamı İhitiyacın Var?**`)
-          .setColor(0x00AE86)
+          .setColor("PURPLE")
           .addField('» a!sunucu-kurulum (Bu komutu kullanırsanız onaylamanıza gerek kalmaz direk kanallar ve kategorlier silinir ve bot kendisi sunucuyu yeniden oluşturur ve kurlları kendisi yazar.)')
           .addField('» a!sunucu (Sunucunuz hakkında bilgi verir)')
           .addField('» a!sunucutanıt')

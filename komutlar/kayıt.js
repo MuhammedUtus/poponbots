@@ -5,7 +5,7 @@ exports.run = (client, message, args) =>
       const embed = new Discord.RichEmbed()
           .setDescription(`**Yardım Komutunu Kullandınız**`)
           .setAuthor(`**» Yardımamı İhitiyacın Var?**`)
-          .setColor(0x00AE86)
+          .setColor("DARK")
           .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
           .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
           .addField('» Kayıt Komutumuz Yapım Aşamasındadır Şuan Kullanamazsınız!')
