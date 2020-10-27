@@ -7,14 +7,14 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
- client.user.setActivity(`${prefix}yardım + ${client.guilds.size} sunucu + ${client.users.size} kullanıcı
-      🅰 a!yardım 🅱
-      📃 a!yardım 📃   `)
+        "a!yardım - 🔥",
+        "a!yardım - Küfür Engel✨",
+        "a!yardım - Reklam Engel⭐️"  
     ];
 
     setInterval(function() {
 
-        var random = Math.floor(Math.random()*(oyun.length-0+0)+0);
+        var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
 
         client.user.setActivity(oyun[random], "https://www.twitch.tv/emirhansaracyt" );
         }, 2 * 2500);
