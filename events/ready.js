@@ -8,10 +8,10 @@ var prefix = ayarlar.prefix;
 module.exports = client => {
 var oyun = [
         "a!yardım - Youtube: Muhammed Utuş🔥",
-        "a!yardım - Twitch: Muhammed Utuş✨",
+        "a!yardım - Discord: discord.gg/3qmqBvE✨",
         "a!yardım - Minecraft: MuhammedUtus⭐️"  
     ];
-
+//sakın buraya karışmma herşey tamam (sadece discord linkive isimlere dokun yoksa başını keserim) ok
     setInterval(function() {
 
         var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
